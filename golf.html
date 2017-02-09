@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aerodynamics in Golf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Custom stylesheet-->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- Import new fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Karla|Titillium+Web" rel="stylesheet">
+
+    <!--Import mathjax for equations -->
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    
+    
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Aerodynamics in Sport</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physics.html">The Physics</a></li>
+                    <li><a href="football.html">Football</a></li>
+                    <li><a href="tennis.html">Tennis</a></li>
+                    <li><a href="cricket.html">Cricket</a></li>
+                    <li class="active"><a href="golf.html">Golf</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    
+    <!--Page body-->
+    <div class="container-fluid">    
+        <div class="row content" id="head_div">
+            <div class="col-sm-1 sidenav"></div>
+            <div class="col-sm-8  white_back" id="content_justified">
+                
+                
+                <!--Content body-->
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#intro">Introduction</a></li>
+                        <li><a data-toggle="tab" href="#projectile">Projectile Motion</a></li>
+                        <li><a data-toggle="tab" href="#drag">Accounting for Drag</a></li>
+                        <li><a data-toggle="tab" href="#flow">Turbulent and Laminar Flow</a></li>
+                        <li><a data-toggle="tab" href="#lift">Backspin and lift
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="intro" class="tab-pane fade in active">
+                        <!--Top tile jumbotron-->
+                        <div class="jumbotron" id="content_centered">
+                            <h1 id="top">Why are golf balls dimpled?</h1>
+                            <hr>
+                            <h2>Aerodynamics in Golf</h2>
+                            <hr>
+                            <h4 ><i>Golf balls are instantly recognisable by their dimpled surface, but why are they designed to look like this?</i></h4>
+                        </div>
+                        <h3>Introduction</h3>
+                        <p>
+                            In golf, success is often dependent on how far you can hit the ball, with players with long drives being able to reach the green in fewer shots. This is where the dimples on a golf ball find their use. These dimples actually help the ball fly farther once hit, than if its surface was smooth. This was first discovered in the <b><a data-toggle="modal" href="#historyModal">mid-1800s</a></b>, and research ever since has caused the evolution of the golf ball to the design we are so familiar with today.
+                        </p>
+                        <p>
+                            Adding these dimples does seem counter-intuitive at first; surely these dimples should increase the drag the ball experiences as it travels through the air? Shouldn’t this slow the ball down quicker and  cause it to hit the ground earlier?
+                        </p>
+                        <p>
+                            To understand exactly why the ball travels further we need to take a closer look at the underlying physics. Let’s first familiarise ourselves with the basics of projectile motion. If you feel like you’re confident enough with this level of basic mechanics, <a data-toggle="tab" href="#drag">click here</a> to skip to the more advanced section.
+                        </p>
+                        
+                        <ul class="pager">
+                            <li id="#next1"><a data-toggle="tab" href="#projectile">Next</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div id="projectile" class="tab-pane fade in">
+                        <h3>Projectile Motion</h3>
+                        <p>
+                            First let’s imagine we are on the Moon, a place with very little atmosphere, and thus a place where we can assume there is no drag to affect the ball’s flight.
+                        </p>
+                        <p>
+                            With no drag, we know that the only factors which affect the balls path through the air will be its initial speed, the angle at which it is launched into the air, and the force of gravity pulling it back towards the ground. In this case, the path will be a perfect parabola, as shown in the diagram below.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_1.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            If we took the case of an average golfer, hitting the ball at 60m/s and an angle of 15 degrees, we can use this model to calculate that the ball will travel just over 183m.
+                        </p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Initial velocity (m/s)</th>
+                                    <th>Launch angle (degrees)</th>
+                                    <th>Range (m)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>183</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pager">
+                            <li><a data-toggle="tab" href="#intro">Previous</a></li>
+                            <li><a data-toggle="tab" href="#drag">Next</a></li>
+                        </ul>
+                    </div>
+                    <div id="drag" class="tab-pane fade in">
+                        <h3>Accounting for Drag</h3>
+                        <p>
+                            Unfortunately, games of golf are <b><a data-toggle="modal" href="#moonModal">very rarely</a></b>, held on the Moon. On Earth we need to account for the force of drag that air imposes on the ball. The effect drag has on the ball’s trajectory is shown in the diagram below.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_2.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            Drag acts in the opposite direction to the balls velocity, causing the ball to slow down during the flight and hit the ground sooner. If we want our golf ball to fly further before hitting the ground we need to reduce this force as much as possible.
+                        </p>
+                        <p>
+                            Normally, to reduce the drag acting on something, we think about making it as stream-lined as possible, like the nose of an aeroplane or front of a car. The equation below is the formula for the calculation of the force on drag $\F_D$ on and object.
+                        </p>
+                        <p>
+
+                        </p>
+                        <p>
+                            Streamlining the object reduces the coefficient of drag C_D in the equation. If we were to apply this idea to a golf ball, we would conclude that the best surface should be a smooth one and measurements of this C_D at low air speeds shows that dimpled balls do initially have a higher drag coefficient.
+                        </p>
+                        <p>
+                            Going by this evidence our average golfer should be able to hit a smoother ball about 10m further than a dimpled one.
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Initial velocity (m/s)</th>
+                                    <th>Launch angle (degrees)</th>
+                                    <th>Coefficient of Drag</th>
+                                    <th>Range (m)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>N/A</td>
+                                    <td>183</td>
+                                </tr>
+                                <tr>
+                                    <td>Smooth ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.45</td>
+                                    <td>106</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimpled ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.60</td>
+                                    <td>95</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            However, evidence from other tests show that it is actually the dimpled ball that travels further in the real world. So what is wrong with our current model?
+                        </p>
+                        <ul class="pager">
+                            <li><a data-toggle="tab" href="#projectile">Previous</a></li>
+                            <li><a data-toggle="tab" href="#flow">Next</a></li>
+                        </ul>
+                    </div>
+                    <div id="flow" class="tab-pane fade in">
+                        <h3>Turbulent and Laminar Flow</h3>
+                        <p>
+                            After the golf ball is hit, it has to push air out of its path, channelling it over its surface.  As the air moves around the ball, the surface affects its direction of flow.
+                        </p>
+                        <p>
+                            On a smooth ball, the air changes its direction without disruption in a process that is known as <b><a data-toggle="modal" href="#laminarModal">laminar flow</a></b>. This flow change creates a wake behind the ball, shown in the diagram below.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_3.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            You can see on the diagram that the ball’s motion through the air causes a zone of lower pressure behind the ball. This low pressure effectively pulls the ball back, creating drag.
+                        </p>
+                        <p>
+                            On a dimpled ball, the air hitting the surface is not as smoothly deflected around the ball. This disrupts the movement of the layers of air around the ball, creating <b><a data-toggle="modal" href="#turbulentModal">turbulent flow</a></b>. 
+                        </p>
+                        <p>
+                            Turbulent air pockets pull in the faster moving air from further away from the ball, pulling it closer towards the surface, directing it around the sides into the ball’s wake.
+                        </p>
+                        <p>
+                            In theory this air flow reduces the size of the area of low pressure behind the ball and thus should reduce the drag.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_4.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            The transition between laminar and turbulent flow can be found by looking at the <b><a data-toggle="modal" href="#reynoldsModal">Reynold's number</a></b> for the air. The Reynolds number is dependent on the speed the air is travelling past the ball, i.e. (from the golfer’s reference frame) the ball’s speed.
+                        </p>
+                        <p>
+                            Researchers investigating golf balls have found that there is a relationship between the Reynolds number and the coefficient of drag. As the Reynolds number increases, they found that the coefficient of drag decreases until it reaches a minimum value.
+                        </p>
+                        <p>
+                            This minimum value of C_d ranges between 0.1 and 0.3 depending on the shape and size of the balls dimples. If we use the average of these values in our model we find that the dimpled ball in our model now travels over 30m further than the smooth ball.
+                        </p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Initial velocity (m/s)</th>
+                                    <th>Launch angle (degrees)</th>
+                                    <th>Coefficient of Drag</th>
+                                    <th>Range (m)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>N/A</td>
+                                    <td>183</td>
+                                </tr>
+                                <tr>
+                                    <td>Smooth ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.45</td>
+                                    <td>106</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimpled ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.20</td>
+                                    <td>137</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            This still isn’t the full story though, as we have one more effect to consider.
+                        </p>
+                        <ul class="pager">
+                            <li><a data-toggle="tab" href="#drag">Previous</a></li>
+                            <li><a data-toggle="tab" href="#lift">Next</a></li>
+                        </ul>
+                    </div>
+                    <div id="lift" class="tab-pane fade in">
+                        <h3>Backspin and lift</h3>
+                        <p>
+                            When a golf ball is hit, it is given an amount of backspin. This spin introduces a new force into our model of the golf ball, lift.
+                        </p>
+                        <p>
+                            As the ball rotates, the ball pulls the surrounding air with it, meaning the air flowing over the top of the ball travels faster than the air travelling under the ball. As described by the <b><a data-toggle="modal" href="#bernModal">Bernoulli principle</a></b>,  this difference in air speed means that there is also a difference in air pressure.
+                        </p>
+                        <p>
+                            The difference between the higher pressure under the ball and the lower pressure above the ball creates lift, forcing the ball upwards. This phenomenon is a by-product of the <b><a data-toggle="modal" href="#bernModal">Bernoulli principle</a></b> and is known as the <b><a data-toggle="modal" href="#magnusModal">Magnus Effect</a></b>. This effect counteracts the force of gravity, allowing the ball to travel further before it hits the ground.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_5.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            It has been shown in studies that the dimples on the ball’s surface are vital if a golfer wants to take advantage of this physical phenomenon to improve their game. In fact it was shown in 1949 that for smooth balls this lift was actually negative, pushing the ball down to the ground much sooner and reducing the ball’s range.
+                        </p>
+                        <p>
+                            For a standard dimpled ball, the relationship between this spin and lift was found to follow the curve described by the equation where lift (L) is given in Newtons and rotational speed (N) is given in rotations per minute,
+                        </p>
+                        <div id="content_centered">
+                            <p> \(L=0.285 \times [1-e^{-0.00026N}]\)</p>
+
+                        </div>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/graph_1.JPG" align="middle" width =60%>
+                        </div>
+                        <p>
+                            By updating our physical model of the golf ball’s trajectory to take into account the new lift force, we find that the dimpled ball now travels even further.
+                        </p>
+                        <div id="content_centered">
+                            <img src="Pictures/golf/diagram_6.JPG" align="middle" width =60%>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Initial velocity (m/s)</th>
+                                    <th>Launch angle (degrees)</th>
+                                    <th>Coefficient of Drag</th>
+                                    <th>Backspin (RPM)</th>
+                                    <th>Range (m)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>N/A</td>
+                                    <td>0</td>
+                                    <td>183</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimpled ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.20</td>
+                                    <td>0</td>
+                                    <td>137</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimpled ball with drag</td>
+                                    <td>60</td>
+                                    <td>15</td>
+                                    <td>0.20</td>
+                                    <td>3275</td>
+                                    <td>190</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            In fact, the dimpled ball will travel further than our initial model without the effects of drag!
+                        </p>
+                        <ul class="pager">
+                            <li><a data-toggle="tab" href="#flow">Previous</a></li>
+                            <li><a data-toggle="tab" href="#intro">Return to start</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <footer class="container-fluid text-center">
+                <p>Physics in Society - Digital Media Project</p>
+                <p>K. Choudhry,  K. Harris, J. Rhodes, C. Slomski</p>
+                </footer>
+                
+            </div>
+            <div class="col-sm-3 sidenav"></div>
+            
+        </div>
+        
+       
+        
+        <!-- history Modal -->
+        <div class="modal fade" id="historyModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Golf Ball designs through history</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- moon Modal -->
+        <div id="moonModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Golf on the Moon</h4>
+                    </div>
+                    <div class="modal-body" id="yt-player">
+                        <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bernoulli Modal-->
+        <div id="bernModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">The Bernoulli Principle<h4>
+                            </div>
+                            <div class="modal-body" id="yt-player">
+                                <p>
+                                    Bernoulli’s Principle states that “for an ideal frictionless flow, along any streamline the total energy is constant.” I.e.
+                                </p>
+                                <p>
+                                    \(p + \rho V^2 + \rho gh =\) a constant
+                                </p>
+                                <p>
+                                    This has the effect that within a horizontal flow or fluid, points of higher fluid speed will have a lower pressure than points with a slower fluid speed.
+                                </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+        <!-- laminar Modal -->
+        <div class="modal fade" id="laminarModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Laminar Flow</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+</div>
+
+        <!-- turbulent Modal -->
+        <div class="modal fade" id="turbulentModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Turbulent Flow</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+ </div>
+
+        <!-- reynolds Modal -->
+        <div class="modal fade" id="turbulentModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Reynold's number</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+ </div>
+
+        <!--magnus modal-->
+        <div id="magnusModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">The Magnus Effect</h4>
+                    </div>
+                    <div class="modal-body" id="yt-player-2">
+                        <p>Magnus effect description here pls.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                    </div>
+                </div>
+            </div>
+</div>
+                
+                
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
