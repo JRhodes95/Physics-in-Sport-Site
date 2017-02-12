@@ -7,6 +7,7 @@ a { color: inherit; }
 
 p{
     font-family: 'Karla', sans-serif;
+    font-size: 120%;
 }
 
 
@@ -49,6 +50,13 @@ body{
 #content_centered{
     text-align: center;
 }
+
+#centered_black{
+    text-align: center;
+    background-color: black;
+}
+
+
 
 .content_centered{
     text-align: center;
