@@ -25,6 +25,10 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
 
         <style>
+            .centered{
+                text-align: center;
+            }
+            
             .foot{
                 background-color: #f8f8f8;
                 color:black;
@@ -69,6 +73,11 @@
 
         </style>
         
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#introModal').modal('show');
+            });
+        </script>
         
         
     </head>
@@ -133,35 +142,43 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="Pictures/indexCarousel/Becks.jpg" alt="Football" width=100%>
-                                <div class="carousel-caption">
-                                    <h3 class="caroHeader">Learn to bend it like Beckham</h3>
-                                    <p>How do professional footballers curve their free kicks?</p>
-                                </div>
+                                <a href="football.html">
+                                    <img src="Pictures/indexCarousel/Becks.jpg" alt="Football" width=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">Learn to bend it like Beckham</h3>
+                                        <p>How do professional footballers curve their free kicks?</p>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="item">
-                                <img src="Pictures/indexCarousel/Broad.jpg" alt="Cricket" width=100%>
-                                <div class="carousel-caption">
-                                    <h3 class="caroHeader">How do fast bowlers control the ball in the air?</h3>
-                                    <p>Learn the secrets and physics behind swing bowling...</p>
-                                </div>
+                                <a href="cricket.html">
+                                    <img src="Pictures/indexCarousel/Broad.jpg" alt="Cricket" width=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">How do fast bowlers control the ball in the air?</h3>
+                                        <p>Learn the secrets and physics behind swing bowling...</p>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="item">
-                                <img src="Pictures/indexCarousel/Murray.jpg" alt="Tennis" width=100%>
-                                <div class="carousel-caption">
-                                    <h3 class="caroHeader">Understand the physics behind topspin and backspin</h3>
-                                    <p>What effect does spin have on a tennis balls motion?</p>
-                                </div>
+                                <a href="tennis.html">
+                                    <img src="Pictures/indexCarousel/Murray.jpg" alt="Tennis" width=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">Understand the physics behind topspin and backspin</h3>
+                                        <p>What effect does spin have on a tennis balls motion?</p>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="item">
-                                <img src="Pictures/indexCarousel/Golf.jpg" alt="Golf" width=100%>
-                                <div class="carousel-caption">
-                                    <h3 class="caroHeader">How science can add distance to your drive</h3>
-                                    <p>Why do golf balls have their characteristic dimpled appearance?</p>
-                                </div>
+                                <a href="golf.html">
+                                    <img src="Pictures/indexCarousel/Golf.jpg" alt="Golf" width=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">How science can add distance to your drive</h3>
+                                        <p>Why do golf balls have their characteristic dimpled appearance?</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -238,6 +255,9 @@
  
                 
             </div>
+            <div class="row foot" id="content_centered">
+                <p>Physics in Society - Digital Media Project 2017</p>
+            </div>
         </div>
         
         <!-- Intro Modal -->
@@ -248,20 +268,21 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         
-                        <h4 class="modal-title">Physics in Sport</h4>
+                        <h4 class="modal-title">Aerodynamics in Sport - Site Guide</h4>
                     </div>
                     <div class="modal-body">
                      
                         
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home">Introduction</a></li>
-                            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                            <li class="active"><a data-toggle="tab" href="#home">Welcome!</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Site Features</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Continue</a></li>
                            
                         </ul>
 
                         <div class="tab-content">
                             <div id="home" class="tab-pane fade in active">
-                                <h3>Introduction</h3>
+                                <h3>Welcome!</h3>
                                 <p>The world of sport attracts the attention of billions across the world.
                                     Many may not realise how the study of physics impacts thier favourite sports.
                                 
@@ -272,9 +293,17 @@
                             </div>
                             
                             <div id="menu1" class="tab-pane fade">
-                                <h3>Menu 3</h3>
-                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                                <button type="button"  data-dismiss="modal">Close guide and explore the site...</button>
+                                <h3>Site Features</h3>
+                                <p>Thoughout the site <b>bold text</b> indicates key words which you may wish to know more about.</p>
+                                <p>Clicking on these bits of bold text will open small pop-ups like this to give you quick insights into the topics being discussed.</p>
+                                <p>They may also contain links to pages with more detailed information on the topic, so if you wish to know more about it you can easiliy switch to that page.</p>
+                                
+                            </div>
+                            
+                            <div id="menu2" class="tab-pane fade centered">
+                                <h3>Continue on to the site!</h3>
+                                
+                                <button type="button"  data-dismiss="modal">Close this guide.</button>
                             </div>
                         </div>
                         
