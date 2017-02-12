@@ -1,4 +1,4 @@
-    
+
 function forceDrag(rho, v, C_D, area){
     
     var force = -0.5 * rho *v * 2 * 2 * C_D * area;

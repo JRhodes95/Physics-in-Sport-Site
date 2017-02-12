@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Physics Part</title>
+        <title>Aerodynamics in Football</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
@@ -60,33 +60,54 @@
                     <div>
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#tab0">Introduction</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Tab 1</a></li>
-                            <li><a data-toggle="tab" href="#tab2">Tab 2</a></li>
-                            <li><a data-toggle="tab" href="#tab3">Tab 3</a></li>
-                            <li><a data-toggle="tab" href="#tab4">Tab 4</a></li>
+                            <li><a data-toggle="tab" href="#tab1">Bend it Like Carlos!</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Bend it like Magnus?</a></li>
+                            <li><a data-toggle="tab" href="#tab3">Knuckleballs</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
                         <div id="tab0" class="tab-pane fade in active">
                             <!--Top tile jumbotron-->
                             <div class="jumbotron" id="content_centered">
-                                <h1 id="top">Aero in football</h1>
+                                <h1 id="top">Why do footballs curve?</h1>
                                 <hr>
-                                <h2>Aerodynamics in Sport</h2>
+                                <h2>Aerodynamics in Football</h2>
                                 <hr>
-                                <h4 ><i>Tagline</i></h4>
+                                <h4 ><i>Why do footballs curve, spin, and move erratically, when players take a free kick or strike a knuckleball?</i></h4>
                             </div>
-                            <h3>Introduction</h3>
-                           <p>
                             
+                            <h3>Introduction</h3>
+                            <p>
+                                You may notice that when David Beckham or Wayne Rooney take a free kick, they tend to kick it with a lot of spin. In physics terms, they not only apply a force to kick the ball in the direction they want to, but also impart another force to spin the ball.
                             </p>
-
+                            <p>
+                                But why do they do this? Why does it make the ball curve? And what on earth goes on with a <b><a data-toggle="modal" href="#knuckleModal">knuckleball</a></b>? To answer these questions, we’re going to have to dive into the physics, and something called the Magnus Effect!
+                            </p>
+                            
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#tab1">Next</a></li>
                             </ul>
                         </div>
                         <div id="tab1" class="tab-pane fade in">
-                            <h3>Tab 1 Title</h3>
+                            <h3>Bend it like Carlos!</h3>
+                            <p>
+                                So, let’s begin with an example of a curved freekick! See <b><a data-toggle="modal" href="#carlosModal">this freekick from Roberto Carlos</a></b> of Brazil! You can easily see the incredible deviation of path!
+                            </p>
+                            
+                            <p>
+                                Note, as we said earlier, he imparts a lot spin on the ball. However, to see how this spin would affect the path of the ball we must first consider a ball not spinning being kicked to the left.
+                            </p>
+                            <img src="Pictures/football/diagram1.png" width=60%>
+                            <p>
+                                As we can see, the air flows around the ball as one might expect. However, let’s see what happens when we add a spin to the ball.
+                            </p>
+                            <img src="Pictures/football/diagram2.png" width=60%>
+                            <p>
+                                Notice that, unlike before, our sets of arrows are no longer symmetrical and there is less space that the top set of arrows occupy than the bottom set of arrows occupy, this means there is lower pressure on the underside of the ball, as the air moves quicker with the rotation. The air on the top moves slower as it’s against the rotation, and thus has a higher pressure.
+                            </p>
+                            
+                            
+                    
 
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#intro">Previous</a></li>
@@ -94,7 +115,11 @@
                             </ul>
                         </div>
                         <div id="tab2" class="tab-pane fade in">
-                            <h3>Tab 2 Title</h3>
+                            <h3>Bend it like... Magnus?</h3>
+                            
+                            <p>
+                                Now that we understand the pressure difference, we can begin to explain how the  <b><a data-toggle="modal" href="#magnusModal">Magnus Effect</a></b> works. As the air is mostly flowing towards the top of the ball, according to Newton’s Third Law there must be an equal and opposite force on the ball making it curve downwards.
+                            </p>
 
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#intro">Previous</a></li>
@@ -102,21 +127,29 @@
                             </ul>
                         </div>
                         <div id="tab3" class="tab-pane fade in">
-                            <h3>Tab 3 Title</h3>
+                            <h3>Knuckleballs</h3>
+                            <h4>Now you understand what makes a spinning ball curve, what's going on here?</h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nK58AssP9tc?start=49&loop=1&end=56" frameborder="0" allowfullscreen></iframe>
+                            <p>
+                                Notice anything different to before? Well, for a start, the ball seems to curve in one direction, then another, and then another! Yet, if we look closely, the ball hardly appears to spin! How is this possible? The Magnus effect, as we now know, only applies to spinning balls! Something else must be going on here…
+                            </p>
+                            <p>
+                                And something else is going on! This is a <b><a data-toggle="modal" href="#knuckleModal">knuckleball</a></b> and the lack of spin is actually crucial! Next we need to turn our attention to the ball, notice it is made up of patches and has seams, this means it isn’t smooth. Normally when the ball rotates, the air “sticks” to the ball very well, but it doesn’t stick so well when the ball isn’t spinning. When it isn’t sticking well, the balls seams can disrupt the airflow, and the disrupted air becomes <b><a data-toggle="modal" href="#turbulentModal">turbulent</a></b>.
+                            </p>
+                            <p>
+                                This turbulent air sometimes can turn back on itself and give the ball a small “push” making it change direction seemingly randomly, as seen in the video above! Its unpredictability is caused by the fact it’s impossible to know which seam will cause the turbulence.
+
+                                So next time you’re taking a free kick, whether you want to curl one in the top corner, or hit a unpredictable knuckleball that no keeper will be able to predict, now you know how to do it!
+
+                            </p>
+                            
 
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#intro">Previous</a></li>
                                 <li><a data-toggle="tab" href="#drag">Next</a></li>
                             </ul>
                         </div>
-                        <div id="tab4" class="tab-pane fade in">
-                            <h3>Tab 4 Title</h3>
-
-                            <ul class="pager">
-                                <li><a data-toggle="tab" href="#intro">Previous</a></li>
-                                <li><a data-toggle="tab" href="#drag">Next</a></li>
-                            </ul>
-                        </div>
+                        
 
                     </div>
 
@@ -131,18 +164,18 @@
 
 
 
-            <!-- history Modal -->
-            <div class="modal fade" id="historyModal" role="dialog">
+            <!-- Knuckleball Modal -->
+            <div class="modal fade" id="knuckleModal" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf Ball designs through history</h4>
+                            <h4 class="modal-title">Knucleballs</h4>
                         </div>
                         <div class="modal-body">
-                            <p>Some text in the modal.</p>
+                            <p>A knuckleball, or knuckler, is a shot hit by a player, usually from distance, with little to no spin. They have a characteristically erratic movement that is very difficult to predict, and thus is very difficult to save.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -152,18 +185,16 @@
                 </div>
             </div>
 
-            <!-- moon Modal -->
-            <div id="moonModal" class="modal fade" role="dialog">
+            <!-- Carlos Modal -->
+            <div id="carlosModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf on the Moon</h4>
+                            <h4 class="modal-title">Roberto Carlos Freekick vs France</h4>
                         </div>
                         <div class="modal-body" id="yt-player">
-                            <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3ECoR__tJNQ?start=79&autoplay=1" frameborder="0" allowfullscreen ></iframe>                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
                         </div>
@@ -230,7 +261,7 @@
                                     <h4 class="modal-title">Turbulent Flow</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>Turbulence occurs when the air is instable, and is characterised by sudden unpredictable air movements.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -270,7 +301,7 @@
                                     <h4 class="modal-title">The Magnus Effect</h4>
                                 </div>
                                 <div class="modal-body" id="yt-player-2">
-                                    <p>Magnus effect description here pls.</p>
+                                    <p>The spinning motion of a ball or cylinder causes air to flow faster around one side of the object than the other. This creates a pressure difference between the two sides which results in a force towards the lower pressure side. The movement caused by this force is known as the <b>Magnus Effect.</b> For more information, the video below adds some deeper description, and looks at a few novel uses for the effect.</p>. 
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
