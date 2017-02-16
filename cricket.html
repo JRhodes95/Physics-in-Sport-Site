@@ -22,11 +22,7 @@
         <!--Import mathjax for equations -->
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
         
-        <style>
-        
-    
-            
-        </style>
+       
 
     </head>
     <body>
@@ -66,13 +62,13 @@
                     <div>
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#tab0">Introduction</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Tab 1</a></li>
-                            <li><a data-toggle="tab" href="#tab2">Tab 2</a></li>
-                            <li><a data-toggle="tab" href="#tab3">Tab 3</a></li>
-                            <li><a data-toggle="tab" href="#tab4">Tab 4</a></li>
+                            <li><a data-toggle="tab" href="#tab1">Swing</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Conventional or Reverse</a></li>
+                            <li><a data-toggle="tab" href="#tab3">Spin</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
+                        
                         <div id="tab0" class="tab-pane fade in active">
                             <!--Top tile jumbotron-->
                             <div class="jumbotron" id="content_centered">
@@ -112,19 +108,77 @@
                             
                         </div>
                         <div id="tab1" class="tab-pane fade in">
-                            <h3>Tab 1 Title</h3>
+                            <h3>Swing</h3>
+                            <br>
+                            <div class=row id=centered_black>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/B75tNVWh_sg?end=40" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br>
+                            <p>
+                                Swing bowling is usually done by fast bowlers, namely those bowling at speeds greater than 70mph. The clip above shows England bowler Jimmy  Anderson bowling New Zealand’s Aaron Redmond during a test match in 2008. You can see in the clip that the ball swerves in the air, causing Redmond to misjudge it and miss his defensive shot.
+                            </p>
+                            <p>
+                                The often-unknown cause of swing bowling is the fact that the thin boundary layer of air that forms along the ball’s surface does not separate at the same point on each side of the ball. The location of this point is dependent on factors such as whether the boundary layer is in a <b><a data-toggle="modal" href="#laminarModal">laminar</a></b> or <b><a data-toggle="modal" href="#turbulentModal">turbulent</a></b>state, and the potential asymmetry due to the presence of the seam and surface roughness of the ball. 
+
+                            </p>
 
                             <ul class="pager">
-                                <li><a data-toggle="tab" href="#intro">Previous</a></li>
-                                <li><a data-toggle="tab" href="#drag">Next</a></li>
+                                <li><a data-toggle="tab" href="#tab0">Previous</a></li>
+                                <li><a data-toggle="tab" href="#tab2">Next</a></li>
                             </ul>
                         </div>
                         <div id="tab2" class="tab-pane fade in">
-                            <h3>Tab 2 Title</h3>
+                            
+                            <div class="row">
+                                
+                                <div class="col-sm-6">
+                                    <h3>Conventional Swing</h3>
+                                    <p>
+                                        To make a cricket ball swing conventionally, one side of the ball should be smooth and the other rough. You may have observed bowlers rubbing one side of the ball on their trousers before bowling. They do this to shine one side of the ball, making it smoother than the other and maximise the amount of swing they can achieve.
+                                    </p>
+                                    <p>
+                                        The bowler holds the ball so that the seam is at an angle from the direction of travel. As the ball travels, the boundary layer on the smooth side of the ball is in a <b><a data-toggle="modal" href="#laminarModal">laminar flow</a></b> state, which separates from the ball quite early. On the other side, the air is disturbed by the seam which makes it transition to a <b><a data-toggle="modal" href="#turbulentModal">turbulent </a></b> state. This turbulent air sticks to the rough side of the ball and leaves the surface at a later point. This effect creates a pressure force on the ball, making the ball swing in the direction the seam is pointing. In other words, the smooth side of the ball travels faster in air and the rough side acts as a brake, arcing its path in the air.
 
+                                    </p>
+                                </div>
+                                <div class="col-sm-5" id="content_centered">
+                                    <br>
+                                    <video width=90% height="auto" autoplay loop>
+                                        <source src="Videos/conv_swing_2.mp4" type="video/mp4" >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-5" id="content_centered">
+                                    <video width=90% height="auto" autoplay loop>
+                                        <source src="Videos/rev_swing.mp4" type="video/mp4" >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Reverse Swing</h3>
+                                    <p>
+                                        In the 1960s, Pakistani cricketer Sarfaraz Nawaz discovered that he could swing the ball in the direction opposite to the seam. This is now known as ‘reverse swing’. It happens when the ball is travelling at more than 80 mph and is rough on both sides, for example - later in the match when the ball has been scuffed by the surface for a longer period of time. 
+                                    </p>
+                                    <p>
+                                        As before, the bowler holds the ball with the seam at an angle to the direction of motion as shown in the picture below. As the ball travels, the air flow on the right side of the ball is also now turbulent because the rough surface disrupts the <b><a data-toggle="modal" href="#laminarModal">laminar</a></b> flow of air. Meanwhile, on the other side, the incident air layer again hits the seam causing <b><a data-toggle="modal" href="#turbulentModal">turbulence</a></b>, but the layer of turbulent air on this side is thicker than on the other. Thus, the layer separates from the ball earlier, and causes a resultant force in the direction perpendicular to the seam. 
+                                    </p>
+                                    <p>
+                                        Reverse swing can be confusing to a batsman who faces it, as often they tend to look for the orientation on the seam during the delivery to try to predict the ball’s movement. If reverse swing is used, the ball will swing in the opposite direction to what they would expect from conventional swing bowling.
+
+                                    </p>
+                                    
+                                </div>
+                                
+
+                            </div>
+                            
                             <ul class="pager">
-                                <li><a data-toggle="tab" href="#intro">Previous</a></li>
-                                <li><a data-toggle="tab" href="#drag">Next</a></li>
+                                <li><a data-toggle="tab" href="#tab1">Previous</a></li>
+                                <li><a data-toggle="tab" href="#tab3">Next</a></li>
                             </ul>
                         </div>
                         <div id="tab3" class="tab-pane fade in">
@@ -135,15 +189,7 @@
                                 <li><a data-toggle="tab" href="#drag">Next</a></li>
                             </ul>
                         </div>
-                        <div id="tab4" class="tab-pane fade in">
-                            <h3>Tab 4 Title</h3>
-
-                            <ul class="pager">
-                                <li><a data-toggle="tab" href="#intro">Previous</a></li>
-                                <li><a data-toggle="tab" href="#drag">Next</a></li>
-                            </ul>
-                        </div>
-
+                        
                     </div>
 
                     <footer class="container-fluid text-center">
@@ -226,87 +272,87 @@
                         </div>
                     </div>
 
-                    <!-- laminar Modal -->
-                    <div class="modal fade" id="laminarModal" role="dialog">
-                        <div class="modal-dialog">
+            <!-- laminar Modal -->
+            <div class="modal fade" id="laminarModal" role="dialog">
+                <div class="modal-dialog">
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Laminar Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Laminar Flow</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
-                    <!-- turbulent Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
+                </div>
+            </div>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Turbulent Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+            <!-- turbulent Modal -->
+            <div class="modal fade" id="turbulentModal" role="dialog">
+                <div class="modal-dialog">
 
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Turbulent Flow</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
-                    <!-- reynolds Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
+                </div>
+            </div>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Reynold's number</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+            <!-- reynolds Modal -->
+            <div class="modal fade" id="turbulentModal" role="dialog">
+                <div class="modal-dialog">
 
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Reynold's number</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
-                    <!--magnus modal-->
-                    <div id="magnusModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">The Magnus Effect</h4>
-                                </div>
-                                <div class="modal-body" id="yt-player-2">
-                                    <p>Magnus effect description here pls.</p>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                                </div>
-                            </div>
+                </div>
+            </div>
+
+            <!--magnus modal-->
+            <div id="magnusModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">The Magnus Effect</h4>
+                        </div>
+                        <div class="modal-body" id="yt-player-2">
+                            <p>Magnus effect description here pls.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
                         </div>
                     </div>
+                </div>
+            </div>
 
 
                 </div>

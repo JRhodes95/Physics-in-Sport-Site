@@ -86,7 +86,7 @@ hr{
 .row.content {height: 600px}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1080px) {
     .sidenav {
         display: none;
     }
