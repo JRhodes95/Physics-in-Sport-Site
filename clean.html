@@ -24,22 +24,7 @@
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
 
-        <style>
-            h1{ 
-                color:white;
-            }
-            body {
-                background-image: url(Pictures/back1.jpg);
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-color: darkblue;
-            }
-
-
-
-        </style>
+        
 
     </head>
     <body>
@@ -72,12 +57,22 @@
         <div class="container-fluid">
 
             <div class="row">
-
-                <div class="col-md-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 white_back">
                     <h1>Aerodynamics in Sport</h1>
                     <hr>
+                    <h2>Demo Quiz Page</h2>
+                    <h4>Pick a topic:</h4>
+                    <script src="quiz.js"></script>
+                    <button class="button btn-lg" id="tennis" onclick="getQuiz(this.id);">Tennis</button>
+                    <button class="button btn-lg" id="football">Football</button>
+                    <button class="button btn-lg" id="golf">Golf</button>
+                    <button class="button btn-lg" id="cricket">Cricket</button>
+                    <div id ="fillQuiz"></div>
 
                 </div>
+                <div class="col-md-2"></div>
+
             </div>
             
             <div class="row">
