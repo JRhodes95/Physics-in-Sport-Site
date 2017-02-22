@@ -22,8 +22,12 @@
     <!--Import mathjax for equations -->
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
     
+    <script src="jquery.stickytabs.js"></script>
+    
     <!--Import js file to allow links to bootstrap tabs-->
     <script src="tablinks.js"></script>
+    
+   
     
     
 </head>
@@ -104,13 +108,19 @@
                                 <br>
                                 <div class="well" id="content_centered">
                                     <p>
-                                        Throughout this page, we will look at how different effects affect the flight of a golf ball. If you are interested to know more about our modelling of the shot, you can download our Python script along with a PDF explaining the code and how it works.
+                                        Throughout this page, we will look at how different effects affect the flight of a golf ball. If you are interested to know more about our modelling of the shot, you can download our Python script and try it out yourself.
                                     </p>
                                     <br>
                                     <p>
                                         Just click on the link below to go to our GitHub page and download the files!
                                     </p>
                                     <a href="https://github.com/JRhodes95/Golf-Ball-Trajectory-Modelling-in-Python/" target="_blank"><button class="btn btn-lg">Download from GitHub <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></button></a>
+                                    <hr>
+                                    <p>
+                                        If you aren't sure what is going on in the code, click the button below to view a page where we explain further.    
+                                    </p>
+                                        <a href="pythonmodel.html" target="_blank"><button class="btn btn-lg">View the python model <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></button></a>
+                                            <p>
                                 </div>
                             </div>
 
@@ -377,30 +387,7 @@
                         </ul>
                     </div>
                     <div id="quiz" class="tab-pane fade in">
-                        <script>
-                            
-                            function startQuiz(){
-                                var x = document.getElementById('quiz-page-1');
-                                var y = document.getElementById('quiz-page-0');
-                                if (x.style.display === 'none') {
-                                    x.style.display = 'block';
-                                    y.style.display = 'none';
-                                    
-                                } else {
-                                    x.style.display = 'none';
-                                }
-                            }
-                            
-                            function nextQuestion_1(){
-                                var current = document.getElementById('quiz-page-1');
-                                var next = doucment.getElementById('quiz-page-2');
-                                
-                                current.style.display = 'block';
-                                next.style.display = 'none';
-                                
-                            }
-                            
-                        </script>
+                    
                         
                         <div id="quiz-page-0">
                             <h3>Test your knowledge</h3>
@@ -574,7 +561,7 @@
                         <h4 class="modal-title">The Magnus Effect</h4>
                     </div>
                     <div class="modal-body" id="yt-player-2">
-                        <p>Magnus effect description here pls.</p>
+                        <p><a href="physics.html#tab4">Magnus effect</a> description here pls.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="modal-footer">

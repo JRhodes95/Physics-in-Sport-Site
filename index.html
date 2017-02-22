@@ -218,15 +218,23 @@
             </div>
             
             <div class="row welcome" id="content_centered">
-                <h1>Welcome</h1>
                 <br>
             </div>
             
             <div class="row body-content" id="content_centered">
-                <h3>Welcome message here.</h3>
-                <div data-toggle="tab" href="#home"><button class="btn btn-lg" data-toggle="modal" data-target="#introModal">Click here to view our site guide.</button></div>
-                <br>
-                <p>padding text</p>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+
+                    <h2><b>Welcome</b></h2>
+                    <br>
+                    <p>
+                        This website was created with the intention of uniting the two seemingly distinct fields of sport and physics, in a way which is accessible to viewers with or without prior physics knowledge. The information presented to you will help demonstrate how techniques, equipment and strategies in commonly played sports, have been carefully formulated using physical concepts such as the Magnus effect and Bernoulli principle. At the end of each section there is an interactive opportunity to test your understanding about this important role physics has in enhancing your favourite sports. All that is left to say is, delve in, learn, and enjoy!
+                    </p>
+                    <div data-toggle="tab" href="#home"><button class="btn btn-lg" data-toggle="modal" data-target="#introModal">Click here to view our site guide.</button></div>
+                    <br>
+                </div>
+                <div class="col-sm-2"></div>
+
             </div>
             <div class="row" id="content_centered">
                 <br>
@@ -290,7 +298,8 @@
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#home">Welcome!</a></li>
                             <li><a data-toggle="tab" href="#menu1">Site Features</a></li>
-                            <li><a data-toggle="tab" href="#menu2">Continue</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Test yourself</a></li>
+                            <li><a data-toggle="tab" href="#menu3">Continue</a></li>
                            
                         </ul>
 
@@ -314,7 +323,17 @@
                                 
                             </div>
                             
-                            <div id="menu2" class="tab-pane fade centered">
+                            <div id="menu2" class="tab-pane fade">
+                            
+                                <h3>Test yourself...</h3>
+                                <p>On each section, there is a final tab with a quiz where you can test what you have learned. Compete with others to get the best score possible on the leaderboards!</p>
+                                <div id="content_centered">
+                                    <img src="Pictures/quiz-example.png" width=70% height=auto>
+                                </div>
+                                
+                            </div>
+                            
+                            <div id="menu3" class="tab-pane fade centered">
                                 <h3>Continue on to the site!</h3>
                                 
                                 <button type="button" class="btn btn-lg" data-dismiss="modal">Close this guide.</button>
