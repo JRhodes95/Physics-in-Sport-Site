@@ -21,9 +21,8 @@
 
         <!--Import mathjax for equations -->
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-        
-        <!--Import js file to allow links to bootstrap tabs-->
-        <script src="tablinks.js"></script>
+
+      
 
     </head>
     <body>
@@ -41,7 +40,6 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="physics.html">The Physics</a></li>
                         <li class="dropdown active">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
                                 <span class="caret"></span></a>
@@ -71,9 +69,48 @@
 
 
                     <!--Content body-->
-                    <h1>Introduction</h1>
-                    
-                    
+                    <h1>The Magnus Effect</h1>
+                    <hr>
+                    <p>
+                        The Magnus Effect is a physical phenomenon in which a lateral force is exerted on a symmetric object solely due to the rotational motion of the body. This lateral force is often thought of as a lift force which arises when the rotation of the body drags the fluid boundary layer in the same direction as the rotation, and thus modifies the pressure distribution and imparts a resultant force on the object. The effect is most commonly associated with the altered trajectories of spinning balls; tennis slices, swing bowling and golf hooks are all due to this phenomenon. 
+                    </p>
+                    <div class="content_centered">
+                        <img src="Pictures/tennis/diagram2.jpg" width=70%>
+                    </div>
+                    <p>
+                        The Magnus force exerted on an object moving through a fluid can be caluated as :
+                    </p>
+                    <div class="content_centered">
+                        <h4> \(F_M = C_L \frac{1}{2} \rho Av^2 \) </h4>
+                    </div>
+                    <p>
+                        where \(C_L = \frac{C_M r \omega}{v} \) with \(\omega\) the rotational velocity of the ball, \(A\) the cross sectional area of the ball and \(C_M\) the coefficient of proportionality.  In order to fully understand the Magnus effect, we will analyse its impact on the trajectory of a  spinning ball. 
+                    </p>
+                    <p>
+                        First, we need to introduce an additional quantity into our description of a <b>ball’s trajectory</b>. The Reynolds number, defined as the relative magnitudes of viscous to inertial forces imposed on the object due to the flow field, can be written as follows: 
+                    </p>
+                    <div class="content_centered">
+                        <h4>\(Re = \frac{uD\rho}{\mu}  \)</h4>
+                        
+                    </div>
+                    <p>
+                        where \(u\) is the velocity of the object relative to the fluid, \(D\) is the diameter of the ball, \(\rho\) is fluid density and \(\mu\)  is the dynamic viscosity of the fluid in the flow field.
+                    </p>
+                    <p>
+                        In general for rough surfaces the layer can become turbulent when \(Re > 4 \times 10^4\). For smooth surfaces, the flow only transitions from <b>laminar to turbulent</b> when \(Re > 3 \times 10^5\).  A negative Magnus effect occurs in the critical Reynolds region of around \(Re \approx 2 \times 10^5\) whereas, a positive Magnus force is induced when the boundary layer is either turbulent or laminar on both ball sides.
+                    </p>
+                    <p>
+                        When clockwise rotation is imparted on a ball which is launched from left to right, the boundary layer on the upper side of the ball seperates earlier than at the bottom of the ball due to unequal drag forces acting on either end. As a result there is a pressure differential then causes an upward deflection of the wake behind the ball, and thus according to <b>Newton’s Third Law of Motion</b>, there is a downward force, known as the Magnus force, exerted on the ball. This resultant downward force consequently makes the ball fall to the ground at a faster rate than if spin had not been applied to the ball.
+                    </p>
+                    <div id="centered_black">
+                        <iframe src='//gifs.com/embed/the-magnus-effect-3l0XgA' frameborder='0' scrolling='no' width='530px' height='299px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+                    </div>
+                    <br>
+                    <p>
+                        Similarly, if instead the ball had been spun in a counter-clockwise direction,  there would have been a downwards deflection of the wake behind the ball and a subsequent upward Magnus force imparted on the ball. As a result, the spun ball would travel a larger horizontal distance than a nonspinning ball in this scenario. 
+                    </p>
+
 
                     <footer class="container-fluid text-center">
                         <p>Physics in Society - Digital Media Project</p>
@@ -82,7 +119,7 @@
 
                 </div>
                 <div class="col-sm-3 sidenav">
-                   
+
 
                 </div>
             </div>

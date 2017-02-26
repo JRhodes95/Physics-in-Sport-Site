@@ -40,7 +40,17 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="physics.html">The Physics</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="physics-intro.html">Introduction</a></li>
+                                <li><a href="projectiles.html">Projectile Motion</a></li>
+                                <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                                <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                                <li><a href="magnus.html">Magnus Effect</a></li>
+                            </ul>
+                        </li>
                         <li><a href="football.html">Football</a></li>
                         <li><a href="tennis.html">Tennis</a></li>
                         <li class="active"><a href="cricket.html">Cricket</a></li>
@@ -65,6 +75,7 @@
                             <li><a data-toggle="tab" href="#tab1">Swing</a></li>
                             <li><a data-toggle="tab" href="#tab2">Conventional or Reverse</a></li>
                             <li><a data-toggle="tab" href="#tab3">Spin</a></li>
+                            <li><a data-toggle="tab" href="#tab4">Test your knowledge</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
@@ -137,7 +148,7 @@
                                         To make a cricket ball swing conventionally, one side of the ball should be smooth and the other rough. You may have observed bowlers rubbing one side of the ball on their trousers before bowling. They do this to shine one side of the ball, making it smoother than the other and maximise the amount of swing they can achieve.
                                     </p>
                                     <p>
-                                        The bowler holds the ball so that the seam is at an angle from the direction of travel. As the ball travels, the boundary layer on the smooth side of the ball is in a <b><a data-toggle="modal" href="#laminarModal">laminar flow</a></b> state, which separates from the ball quite early. On the other side, the air is disturbed by the seam which makes it transition to a <b><a data-toggle="modal" href="#turbulentModal">turbulent </a></b> state. This turbulent air sticks to the rough side of the ball and leaves the surface at a later point. This effect creates a pressure force on the ball, making the ball swing in the direction the seam is pointing. In other words, the smooth side of the ball travels faster in air and the rough side acts as a brake, arcing its path in the air.
+                                        The bowler holds the ball so that the seam is at an angle from the direction of travel. As the ball travels, the boundary layer on the smooth side of the ball is in a <b><a data-toggle="modal" href="#laminarModal">laminar flow</a></b> state, which separates from the ball quite early. On the other side, the air is disturbed by the seam which makes it transition to a <b><a data-toggle="modal" href="#turbulentModal">turbulent</a></b>      state. This turbulent air sticks to the rough side of the ball and leaves the surface at a later point. This effect creates a pressure force on the ball, making the ball swing in the direction the seam is pointing. In other words, the smooth side of the ball travels faster in air and the rough side acts as a brake, arcing its path in the air.
 
                                     </p>
                                 </div>
@@ -182,7 +193,56 @@
                             </ul>
                         </div>
                         <div id="tab3" class="tab-pane fade in">
-                            <h3>Tab 3 Title</h3>
+                            <h3>Spin Bowling</h3>
+                            <p>
+                                In the case of spin bowling, the bowler uses his wrist or fingers to impart a spin on the ball as he releases it. The direction of this spin will determine the ball's behaviour during its flight and upon impact with the ground.
+                            </p>
+                            <div class=row id=centered_black>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eZyQQl_YYRM?start=8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br>
+
+                            <p>
+                                A cricket ball, like anything else, has three main axes (perpendicular to each other) about which it can spin. Each spin axis has a different effect on the flight of ball through the air and the way it bounces when it hits the ground. Once the ball hits the ground, it deflects in the direction of the spin.
+                            </p>
+                            <p>
+                                A ball that spins about an axis <i>along</i> the pitch towards the batsman kicks sharply to the left or right (depending on the spin direction) when it hits the ground. The bowler grips the ball from the seam and rotates it <i>anti-clockwise</i> to make it spin away from a right-handed batsman, or rotates it <i>clockwise</i> to make it spin towards the batsman. These are known as leg spin and off spin, respectively.
+                            </p>
+                            <hr>
+                            <h4>Topspin</h4>
+                            <p>
+                                To achieve topspin, the bowler imparts a spin to the ball along a horizontal axis, across the pitch, in a direction <i>towards</i> the batsman, The <b><a data-toggle="modal" href="#magnusModal">Magnus force</a></b> causes the ball to dive down or dip towards the pitch and therefore hit the ground faster. This happens because the top surface of the ball travels in a direction opposite to the air flow which causes the air to slow down and causes high pressure.
+                            </p>
+                            <p>
+                                On the other hand, the bottom surface of the ball travels in the same direction as the air flow, causing the air to speed up resulting in a low pressure. This pressure difference causes the ball to deviate towards the low-pressure side. Finally, as the ball hits the ground, it then kicks up forwards at a reduced angle. The reason for this is because as the ball pitches, the bottom surface of the ball (in contact with the ground) tends to slide backwards. Frictional force then acts to oppose this motion, tending the ball to slide forwards. The result is the ball moving forwards at a low angle. 
+                            </p>
+                            <hr>
+                            <h4>Backspin</h4>
+                            <p>
+                                For backspin bowling, the bowler imparts a spin to the ball along the horizontal axis across the pitch in a direction away from the batsman. The <b><a data-toggle="modal" href="#magnusModal">Magnus force</a></b> in this case, causes the ball to float through the air for longer. The reason for this is because contrary to top spin, the bottom surface of the ball now travels in a direction opposite to the air flow while the top surface travels in the same direction as the flow of air. This causes a low pressure near the top surface, causing the ball to deviate towards it. 
+                            </p>
+                            <p>
+                                As the ball hits the ground, it kicks up, but at a lower speed than that of a non-spinning ball. This happens because as the ball pitches, the bottom surface of the ball in contact with the ground tends to move forwards, while the frictional force acts in an opposite direction to oppose this motion. The result is the ball kicking up at a greater angle but with a reduced speed.
+
+                            </p>
+                            <ul class="pager">
+                                <li><a data-toggle="tab" href="#tab2">Previous</a></li>
+                                <li><a data-toggle="tab" href="#tab4">Test your knowledge!</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab4" class="tab-pane fade in">
+                            <div id="embed-quiz-251652">Loading <a href="https://www.onlinequizcreator.com/aerodynamics-in-cricket/quiz-251652">Aerodynamics in Cricket</a></div>
+                            <script type="text/javascript">
+                                var QuizWorks = window.QuizWorks || [];
+                                QuizWorks.push(
+                                    [document.getElementById("embed-quiz-251652"), "quiz", "251652", {
+                                        autostart: false,
+                                        width: "100%",
+                                        height: "640px" 
+                                    }]
+                                );
+                            </script>
+                            <script type="text/javascript" async defer src="https://d134jvmqfdbkyi.cloudfront.net/script/embed.min.js"></script>
 
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#intro">Previous</a></li>
@@ -205,45 +265,7 @@
 
 
 
-            <!-- history Modal -->
-            <div class="modal fade" id="historyModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf Ball designs through history</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- moon Modal -->
-            <div id="moonModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf on the Moon</h4>
-                        </div>
-                        <div class="modal-body" id="yt-player">
-                            <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
 
             <!-- bernoulli Modal-->
             <div id="bernModal" class="modal fade" role="dialog">

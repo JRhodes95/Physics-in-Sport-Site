@@ -22,7 +22,6 @@
         <!--Import mathjax for equations -->
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
 
         <style>
             .centered{
@@ -115,11 +114,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
+                    
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="physics.html">The Physics</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="physics-intro.html">Introduction</a></li>
+                                <li><a href="projectiles.html">Projectile Motion</a></li>
+                                <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                                <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                                <li><a href="magnus.html">Magnus Effect</a></li>
+                            </ul>
+                        </li>
                         <li><a href="football.html">Football</a></li>
                         <li><a href="tennis.html">Tennis</a></li>
                         <li><a href="cricket.html">Cricket</a></li>
@@ -218,15 +228,23 @@
             </div>
             
             <div class="row welcome" id="content_centered">
-                <h1>Welcome</h1>
                 <br>
             </div>
             
             <div class="row body-content" id="content_centered">
-                <h3>Welcome message here.</h3>
-                <div data-toggle="tab" href="#home"><button class="btn btn-lg" data-toggle="modal" data-target="#introModal">Click here to view our site guide.</button></div>
-                <br>
-                <p>padding text</p>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+
+                    <h2><b>Welcome</b></h2>
+                    <hr>
+                    <p>
+                        This website was created with the intention of uniting the two seemingly distinct fields of sport and physics, in a way which is accessible to viewers with or without prior physics knowledge. The information presented to you will help demonstrate how techniques, equipment and strategies in commonly played sports, have been carefully formulated using physical concepts such as the Magnus effect and Bernoulli principle. At the end of each section there is an interactive opportunity to test your understanding about this important role physics has in enhancing your favourite sports. All that is left to say is, delve in, learn, and enjoy!
+                    </p>
+                    <div data-toggle="tab" href="#home"><button class="btn btn-lg" data-toggle="modal" data-target="#introModal">Click here to view our site guide.</button></div>
+                    <br>
+                </div>
+                <div class="col-sm-2"></div>
+
             </div>
             <div class="row" id="content_centered">
                 <br>
@@ -234,6 +252,7 @@
             
             <div class="row foot" id="content_centered">
                 <h3>Authors</h3>
+                <hr>
             </div>
             
             <!--Footer row-->
@@ -276,7 +295,7 @@
         
         <!-- Intro Modal -->
         <div class="modal fade" id="introModal" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog ">
 
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -287,37 +306,64 @@
                     <div class="modal-body">
                      
                         
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home">Welcome!</a></li>
-                            <li><a data-toggle="tab" href="#menu1">Site Features</a></li>
-                            <li><a data-toggle="tab" href="#menu2">Continue</a></li>
-                           
-                        </ul>
+                        
 
-                        <div class="tab-content">
-                            <div id="home" class="tab-pane fade in active">
+                        <div class="tab-content content_centered">
+                            <div id="home" class="tab-pane fade in active ">
                                 <h3>Welcome!</h3>
                                 <p>The world of sport attracts the attention of billions across the world.
-                                    Many may not realise how the study of physics impacts thier favourite sports.
+                                    Many may not realise how the study of physics impacts their favourite sports.
                                 
-                                    In this site, we want to show the innate links between the study of aerodynamics and ball sports including Football, Tennis, Cricket, and Golf.
+                                    In this site, we want to show the innate links between the study of aerodynamics and ball sports including football, tennis, cricket, and golf.
                                 </p>
                                 
-                                
+                                <button class="btn btn-lg" data-toggle="tab" href="#menu1">Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
+                              
                             </div>
                             
                             <div id="menu1" class="tab-pane fade">
                                 <h3>Site Features</h3>
                                 <p>Thoughout the site <b>bold text</b> indicates key words which you may wish to know more about.</p>
                                 <p>Clicking on these bits of bold text will open small pop-ups like this to give you quick insights into the topics being discussed.</p>
-                                <p>They may also contain links to pages with more detailed information on the topic, so if you wish to know more about it you can easiliy switch to that page.</p>
+                                <p>They may also contain links to pages with more detailed information on the topic, so if you wish to know more about it you can easily switch to that page.</p>
+                                
+                                
+                                <button class=" btn btn-lg" data-toggle="tab" href="#menu2">Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
                                 
                             </div>
                             
-                            <div id="menu2" class="tab-pane fade centered">
-                                <h3>Continue on to the site!</h3>
+                            <div id="menu2" class="tab-pane fade">
+                            
+                                <h3>Test yourself...</h3>
+                                <p>On each section, there is a final tab with a quiz where you can test what you have learned. Compete with others to get the best score possible on the leaderboards!</p>
+                                <div id="content_centered">
+                                    <img src="Pictures/quiz-example.png" class="img-rounded" width=70% height=auto>
+                                </div>
                                 
+                                
+                                <button class="btn btn-lg" data-toggle="tab" href="#menu3">Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
+                                
+                                
+                            </div>
+                            
+                            <div id="menu3" class="tab-pane fade centered">
+                               
+                                
+                                <p>
+                                    For the best experience on this site, we advise the use of a modern web browser such as Google Chrome or Mozilla Firefox.
+                                </p>
+                                <p>
+                                    If you are using Internet Explorer, you may wish to download a newer browser from one of the links below.
+                                </p>
+                                <a href="https://www.google.co.uk/chrome/browser/desktop/index.html?brand=CHBD&gclid=CjwKEAiAirXFBRCQyvL279Tnx1ESJAB-G-QvixJaw9zuPSjRsphnl_H-Ywdw6XXvClazkHeZM-cRjBoCXezw_wcB" target="_blank"><button type="button" class="btn btn-sm" >Download Chrome <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button></a>
+                                <a href="https://www.mozilla.org/en-GB/firefox/new/?utm_source=google&utm_medium=paidsearch&utm_campaign=Brand-UK-EN-GGL-Exact&utm_term=download%20mozilla&utm_content=A144_A203_A006268&gclid=CjwKEAiAirXFBRCQyvL279Tnx1ESJAB-G-Qvo3I6S1xziyCx56YfkWxT83gQRFu8VMTR9F3cbMn0xBoCCFzw_wcB&gclsrc=aw.ds" target="_blank"><button type="button" class="btn btn-sm" >Download Firefox <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button></a>
+                                        
+                                <hr>
+                                <h3>Continue on to the site!</h3>
+
+                                       
                                 <button type="button" class="btn btn-lg" data-dismiss="modal">Close this guide.</button>
+                                    
                             </div>
                         </div>
                         

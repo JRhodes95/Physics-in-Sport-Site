@@ -21,7 +21,7 @@
 
         <!--Import mathjax for equations -->
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-        
+
         <!--Import js file to allow links to bootstrap tabs-->
         <script src="tablinks.js"></script>
 
@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="physics.html">The Physics</a></li>
+                       
                         <li class="dropdown active">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
                                 <span class="caret"></span></a>
@@ -71,9 +71,69 @@
 
 
                     <!--Content body-->
-                    <h1>Introduction</h1>
-                    
-                    
+                    <h1>Projectile Motion</h1>
+                    <hr>
+                    <p>
+                        Projectile motion is the free fall motion of an object in a horizontal path with constant velocity, as gravity is considered to be the only external force acting on it. The curved path along which the object consequently travels, is known as its trajectory.
+                        To predict the trajectory of a ball in flight, the initial velocity and position must be known to solve the kinematic equations . The velocity in the vertical and horizontal directions are as follows:
+
+                    </p>
+                    <p>
+                        where \(\theta\) is the angle of projection measured upwards from the horizontal, \(v_x\) is the initial horizontal velocity, \(v_y\) is the initial vertical velocity. 
+                    </p>
+                    <div class="content_centered row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-3">\(v_y = v sin\theta\)     </div>
+                        <div class="col-sm-3">\(v_x = v cos\theta\)</div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                    <p>
+                        Below is a graphical representation of a simple ball trajectory under the sole influence of gravity: 
+                    </p>
+                    <div class="content_centered">
+                        <img src="#" width= 60%>
+                    </div>
+                    <h2>How to account for drag:</h2>
+                    <p>
+                        The model of a ball’s trajectory can be made more accurate with the inclusion of drag. In reality, due to the objects interaction with the medium it is travelling through, aerodynamic drag and lift forces also act on the ball when in flight. From Newton’s second law of motion in vector form we have that the net forces acting on the ball are:
+                    </p>
+                    <div class="content_centered">
+                        \( \sum^t_0 F = m \frac{\partial^2x}{\partial t^2}  \)
+                    </div>
+                    <p>
+                        where \(F\) is the force acting on the body, \(m\) is the mass of the ball, \(t\) is the time and \(x\) is the position vector. As described on the sports pages, the drag forces on the ball are greatly impacted by the application of spin, therefore it is essential that we include this information. This is achieved by the inclusion of the drag coefficients, unique to each ball type and dependent on the <b>Reynolds number</b>.
+                    </p>
+                    <p>
+                        Thus, in our advanced model we will include the following drag \(F_D\) and lift \(F_L\) forces along with gravity in the equation above to calculate the acceleration and therefore trajectory of the ball, where: 
+                    </p>
+                    <div class="content_centered">
+                       \( F_L = C_L \frac{1}{2} \rho A V^2  \)
+                    </div>
+                    <br>
+                    <div class="content_centered">
+                       \( F_D = C_D \frac{1}{2} \rho A V^2  \)
+                    </div>
+                    <p>
+                        Here \(C_L\) and \(C_D\) are the lift and drag coefficients, \(rho\) is the fluid density, an \(V\) is the velocity of the bulk fluid moving past the object. The area, \(A\), is calculated based on the forward projected area of the ball that is in a perpendicular direction of fluid flow. 
+                    </p>
+                    <h2>How to solve the drag equation</h2>
+                    <p>
+                        The inclusion of drag means that we can no longer rely on the kinematic equations. Instead we use Newton’s equations of motion, which lead to first order non-linear differential equations that can then be solved to predict the ball’s trajectory . Assuming the ball has topspin, these can be written as follows: 
+                    </p>
+                    <div class="content_centered">
+                        \( m \frac{dv_x}{dt} = - F_d cos\theta + F_L sin\theta  \)
+                    </div>
+                    <br>
+                    <div class="content_centered">
+                        \( m \frac{dv_y}{dt} = -F_d cos\theta - F_L sin \theta -mg  \)
+                    </div>
+                    <p>
+                        One can integrate the above equations to find the horizontal and vertical displacements of the ball provided the initial velocities and launch angles of the ball are known. From these calculations, it is easy to see the effect that spin and thus drag has on the trajectory of a ball if we compare it to the trajectory of a ball undergoing projectile motion.  Below is a graphical illustration of the difference:
+                    </p>
+                    <div class="content_centered">
+                        <img src="#" width = 60%>
+                    </div>
+
 
                     <footer class="container-fluid text-center">
                         <p>Physics in Society - Digital Media Project</p>
@@ -82,7 +142,7 @@
 
                 </div>
                 <div class="col-sm-3 sidenav">
-                   
+
 
                 </div>
             </div>

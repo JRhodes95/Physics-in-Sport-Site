@@ -22,8 +22,11 @@
     <!--Import mathjax for equations -->
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
     
-    <!--Import js file to allow links to bootstrap tabs-->
-    <script src="tablinks.js"></script>
+    <script src="jquery.stickytabs.js"></script>
+    
+  
+    
+   
     
     
 </head>
@@ -42,7 +45,17 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="physics.html">The Physics</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="physics-intro.html">Introduction</a></li>
+                            <li><a href="projectiles.html">Projectile Motion</a></li>
+                            <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                            <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                            <li><a href="magnus.html">Magnus Effect</a></li>
+                        </ul>
+                    </li>
                     <li><a href="football.html">Football</a></li>
                     <li><a href="tennis.html">Tennis</a></li>
                     <li><a href="cricket.html">Cricket</a></li>
@@ -68,8 +81,7 @@
                         <li><a data-toggle="tab" href="#drag">Accounting for Drag</a></li>
                         <li><a data-toggle="tab" href="#flow">Turbulent and Laminar Flow</a></li>
                         <li><a data-toggle="tab" href="#lift">Backspin and lift
-                        <li><a data-toggle="tab" href="#quiz">Test your knowledge!
-                            </a></li>
+                        <li><a data-toggle="tab" href="#quiz">Test your knowledge!</a></li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -104,13 +116,19 @@
                                 <br>
                                 <div class="well" id="content_centered">
                                     <p>
-                                        Throughout this page, we will look at how different effects affect the flight of a golf ball. If you are interested to know more about our modelling of the shot, you can download our Python script along with a PDF explaining the code and how it works.
+                                        Throughout this page, we will look at how different effects affect the flight of a golf ball. If you are interested to know more about our modelling of the shot, you can download our Python script and try it out yourself.
                                     </p>
                                     <br>
                                     <p>
                                         Just click on the link below to go to our GitHub page and download the files!
                                     </p>
                                     <a href="https://github.com/JRhodes95/Golf-Ball-Trajectory-Modelling-in-Python/" target="_blank"><button class="btn btn-lg">Download from GitHub <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></button></a>
+                                    <hr>
+                                    <p>
+                                        If you aren't sure what is going on in the code, click the button below to view a page where we explain further.    
+                                    </p>
+                                        <a href="pythonmodel.html" target="_blank"><button class="btn btn-lg">View the python model <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></button></a>
+                                            <p>
                                 </div>
                             </div>
 
@@ -373,67 +391,34 @@
                         </p>
                         <ul class="pager">
                             <li><a data-toggle="tab" href="#flow">Previous</a></li>
-                            <li><a data-toggle="tab" href="#intro">Return to start</a></li>
+                            <li><a data-toggle="tab" href="#quiz">Test your knowledge!</a></li>
                         </ul>
                     </div>
                     <div id="quiz" class="tab-pane fade in">
-                        <script>
-                            
-                            function startQuiz(){
-                                var x = document.getElementById('quiz-page-1');
-                                var y = document.getElementById('quiz-page-0');
-                                if (x.style.display === 'none') {
-                                    x.style.display = 'block';
-                                    y.style.display = 'none';
-                                    
-                                } else {
-                                    x.style.display = 'none';
-                                }
-                            }
-                            
-                            function nextQuestion_1(){
-                                var current = document.getElementById('quiz-page-1');
-                                var next = doucment.getElementById('quiz-page-2');
-                                
-                                current.style.display = 'block';
-                                next.style.display = 'none';
-                                
-                            }
-                            
-                        </script>
+                    
                         
                         <div id="quiz-page-0">
-                            <h3>Test your knowledge</h3>
-                            <hr>
-                            <h4><i>Take our quiz on how aerodynamics affects golf.</i></h4>
-                            <button class="button btn-lg" onclick="startQuiz()">Start</button>
-                        </div>
-                        
-                        <div id="quiz-page-1" style="display: none;">
-                            <h3>Question 1</h3>
-                            <hr>
-                            <form>
-                                <input type=radio name="answer1" value="1a">(a) Answer a</input><br>
-                                <input type=radio name="answer1" value="1b">(b) Answer b</input><br>
-                                <input type=radio name="answer1" value="1b">(c) Answer b</input><br>
-                                <button class="button btn-lg" onclick="nextQuestion_1()">Next question</button>
-                            </form>
-                        </div>
-                        
-                    <div id="quiz-page-1" style="display: none;">
-                        <h3>Question 1</h3>
-                        <hr>
-                        <form>
-                            <input type=radio name="answer1" value="1a">(a) Answer a</input><br>
-                            <input type=radio name="answer1" value="1b">(b) Answer b</input><br>
-                            <input type=radio name="answer1" value="1b">(c) Answer b</input><br>
-                            <button class="button btn-lg" onclick="nextQuestion_2()">Next question</button>
-                        </form>
-                    </div>
+                            
+                            <div id="embed-quiz-251543">Loading <a href="https://www.onlinequizcreator.com/aerodynamics-in-golf/quiz-251543">Aerodynamics in Golf</a></div>
+                            <script type="text/javascript">
+                                var QuizWorks = window.QuizWorks || [];
+                                QuizWorks.push(
+                                    [document.getElementById("embed-quiz-251543"), "quiz", "251543", {
+                                        autostart: false,
+                                        width: "100%",
+                                        height: "640px" 
+                                    }]
+                                );
+                            </script>
+                            <script type="text/javascript" async defer src="https://d134jvmqfdbkyi.cloudfront.net/script/embed.min.js"></script>
                         
                     
                     </div>
+                        
                 </div>
+                    
+                </div>
+                            
                 
                 <footer class="container-fluid text-center">
                 <p>Physics in Society - Digital Media Project</p>
@@ -586,7 +571,7 @@
                         <h4 class="modal-title">The Magnus Effect</h4>
                     </div>
                     <div class="modal-body" id="yt-player-2">
-                        <p>Magnus effect description here pls.</p>
+                        <p><a href="physics.html#tab4">Magnus effect</a> description here pls.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="modal-footer">
