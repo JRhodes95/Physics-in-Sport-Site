@@ -38,7 +38,17 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="physics.html">The Physics</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="physics-intro.html">Introduction</a></li>
+                                <li><a href="projectiles.html">Projectile Motion</a></li>
+                                <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                                <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                                <li><a href="magnus.html">Magnus Effect</a></li>
+                            </ul>
+                        </li>
                         <li><a href="football.html">Football</a></li>
                         <li class="active"><a href="tennis.html">Tennis</a></li>
                         <li><a href="cricket.html">Cricket</a></li>
@@ -131,6 +141,9 @@
                             <p>
                                 As previously discussed, spin can significantly alter the trajectory of a ball, however it also has a strong influence over the subsequent bounce of the ball at the end of the receiver. To understand the motion of the ball we must separate the horizontal and vertical components of the balls velocity, as it is the ratio of the vertical velocity of the ball to its horizontal velocity that determine the subsequent angle with which the ball will rebound off the court.
                             </p>
+                            <div class=row id=centered_black>
+                                <iframe  class='embed-responsive-item' width="560" height="315" src="https://www.youtube.com/embed/3ECoR__tJNQ?start=79" frameborder="0" allowfullscreen ></iframe>  
+                            </div>
                             <p>
                                 To begin our analysis, we need to first calculate the <b><a data-toggle="modal" href="#restitutionModal">coefficient of restitution (COR)</a></b> of the ball on court, as this affects the vertical speed of the tennis ball after its bounce.  This is found by calculating the ratio of the relative speed of the ball after rebounding off the court to its relative speed before impact. As the force of friction alters the balls spin and horizontal motion, we need to also calculate the coefficient of friction (COF) between the court and the ball. For all tennis courts, the values of <b><a data-toggle="modal" href="#restitutionModal">(COR)</a></b> and COF lie in the range of 0.5-1.0.  
                             </p>
@@ -202,7 +215,8 @@
                             
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#tab2">Previous</a></li>
-                                <li><a data-toggle="tab" href="#tab0">Back to start.</a></li>
+                                <li><a data-toggle="tab" href="#tab4">Test your knowledge!</a></li>
+
                             </ul>
                         </div>
                         <div id="tab4" class="tab-pane fade in">

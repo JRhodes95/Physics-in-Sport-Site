@@ -38,7 +38,17 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="physics.html">The Physics</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="physics-intro.html">Introduction</a></li>
+                                <li><a href="projectiles.html">Projectile Motion</a></li>
+                                <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                                <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                                <li><a href="magnus.html">Magnus Effect</a></li>
+                            </ul>
+                        </li>
                         <li class="active"><a href="football.html">Football</a></li>
                         <li><a href="tennis.html">Tennis</a></li>
                         <li><a href="cricket.html">Cricket</a></li>
@@ -161,7 +171,7 @@
 
                             <ul class="pager">
                                 <li><a data-toggle="tab" href="#tab1">Previous</a></li>
-                                <li><a data-toggle="tab" href="#tab0">Back to start</a></li>
+                                <li><a data-toggle="tab" href="#tab3">Test your knowledge!</a></li>
                             </ul>
                         </div>
                         <div id="tab3" class="tab-pane fade in">
@@ -329,9 +339,17 @@
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">The Magnus Effect</h4>
                                 </div>
-                                <div class="modal-body" id="yt-player-2">
-                                    <p>The spinning motion of a ball or cylinder causes air to flow faster around one side of the object than the other. This creates a pressure difference between the two sides which results in a force towards the lower pressure side. The movement caused by this force is known as the <b>Magnus Effect.</b> For more information, the video below adds some deeper description, and looks at a few novel uses for the effect.</p>. 
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                                <div class="modal-body">
+                                    <p>
+                                        The spinning motion of a ball or cylinder causes air to flow faster around one side of the object than the other. This creates a pressure difference between the two sides which results in a force towards the lower pressure side. The movement caused by this force is known as the <b>Magnus Effect.</b>
+                                    </p>
+                                    <p>
+                                        If you want to find out more, click the button below to go to our section on the Magnus effect.
+                                    </p>
+                                    <div class="content_centered">
+                                        <a href="magnus.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                                    </div>
+                                    
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>

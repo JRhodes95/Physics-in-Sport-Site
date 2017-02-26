@@ -24,8 +24,7 @@
     
     <script src="jquery.stickytabs.js"></script>
     
-    <!--Import js file to allow links to bootstrap tabs-->
-    <script src="tablinks.js"></script>
+  
     
    
     
@@ -46,7 +45,17 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="physics.html">The Physics</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="physics-intro.html">Introduction</a></li>
+                            <li><a href="projectiles.html">Projectile Motion</a></li>
+                            <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                            <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                            <li><a href="magnus.html">Magnus Effect</a></li>
+                        </ul>
+                    </li>
                     <li><a href="football.html">Football</a></li>
                     <li><a href="tennis.html">Tennis</a></li>
                     <li><a href="cricket.html">Cricket</a></li>
@@ -72,8 +81,7 @@
                         <li><a data-toggle="tab" href="#drag">Accounting for Drag</a></li>
                         <li><a data-toggle="tab" href="#flow">Turbulent and Laminar Flow</a></li>
                         <li><a data-toggle="tab" href="#lift">Backspin and lift
-                        <li><a data-toggle="tab" href="#quiz">Test your knowledge!
-                            </a></li>
+                        <li><a data-toggle="tab" href="#quiz">Test your knowledge!</a></li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -383,16 +391,14 @@
                         </p>
                         <ul class="pager">
                             <li><a data-toggle="tab" href="#flow">Previous</a></li>
-                            <li><a data-toggle="tab" href="#intro">Return to start</a></li>
+                            <li><a data-toggle="tab" href="#quiz">Test your knowledge!</a></li>
                         </ul>
                     </div>
                     <div id="quiz" class="tab-pane fade in">
                     
                         
                         <div id="quiz-page-0">
-                            <h3>Test your knowledge</h3>
-                            <hr>
-                            <h4><i>Take our quiz on how aerodynamics affects golf.</i></h4>
+                            
                             <div id="embed-quiz-251543">Loading <a href="https://www.onlinequizcreator.com/aerodynamics-in-golf/quiz-251543">Aerodynamics in Golf</a></div>
                             <script type="text/javascript">
                                 var QuizWorks = window.QuizWorks || [];
@@ -408,7 +414,11 @@
                         
                     
                     </div>
+                        
                 </div>
+                    
+                </div>
+                            
                 
                 <footer class="container-fluid text-center">
                 <p>Physics in Society - Digital Media Project</p>

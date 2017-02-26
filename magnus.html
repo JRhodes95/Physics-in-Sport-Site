@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Physics Part</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--Custom stylesheet-->
+        <link href="style.css" rel="stylesheet">
+
+        <!-- Import new fonts from google -->
+        <link href="https://fonts.googleapis.com/css?family=Karla|Titillium+Web" rel="stylesheet">
+
+        <!--Import mathjax for equations -->
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+      
+
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Aerodynamics in Sport</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="physics-intro.html">The Physics
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="physics-intro.html">Introduction</a></li>
+                                <li><a href="projectiles.html">Projectile Motion</a></li>
+                                <li><a href="lamturb.html">Laminar and Turbulent Flow</a></li>
+                                <li><a href="bernoulli.html">Bernoulli Principle</a></li>
+                                <li><a href="magnus.html">Magnus Effect</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="football.html">Football</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="cricket.html">Cricket</a></li>
+                        <li><a href="golf.html">Golf</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!--Page body-->
+        <div class="container-fluid">    
+            <div class="row content" id="head_div">
+                <div class="col-sm-1 sidenav"></div>
+                <div class="col-sm-8 white_back" id="content_justified">
+
+
+                    <!--Content body-->
+                    <h1>The Magnus Effect</h1>
+                    <hr>
+                    <p>
+                        The Magnus Effect is a physical phenomenon in which a lateral force is exerted on a symmetric object solely due to the rotational motion of the body. This lateral force is often thought of as a lift force which arises when the rotation of the body drags the fluid boundary layer in the same direction as the rotation, and thus modifies the pressure distribution and imparts a resultant force on the object. The effect is most commonly associated with the altered trajectories of spinning balls; tennis slices, swing bowling and golf hooks are all due to this phenomenon. 
+                    </p>
+                    <div class="content_centered">
+                        <img src="Pictures/tennis/diagram2.jpg" width=70%>
+                    </div>
+                    <p>
+                        The Magnus force exerted on an object moving through a fluid can be caluated as :
+                    </p>
+                    <div class="content_centered">
+                        <h4> \(F_M = C_L \frac{1}{2} \rho Av^2 \) </h4>
+                    </div>
+                    <p>
+                        where \(C_L = \frac{C_M r \omega}{v} \) with \(\omega\) the rotational velocity of the ball, \(A\) the cross sectional area of the ball and \(C_M\) the coefficient of proportionality.  In order to fully understand the Magnus effect, we will analyse its impact on the trajectory of a  spinning ball. 
+                    </p>
+                    <p>
+                        First, we need to introduce an additional quantity into our description of a <b>ball’s trajectory</b>. The Reynolds number, defined as the relative magnitudes of viscous to inertial forces imposed on the object due to the flow field, can be written as follows: 
+                    </p>
+                    <div class="content_centered">
+                        <h4>\(Re = \frac{uD\rho}{\mu}  \)</h4>
+                        
+                    </div>
+                    <p>
+                        where \(u\) is the velocity of the object relative to the fluid, \(D\) is the diameter of the ball, \(\rho\) is fluid density and \(\mu\)  is the dynamic viscosity of the fluid in the flow field.
+                    </p>
+                    <p>
+                        In general for rough surfaces the layer can become turbulent when \(Re > 4 \times 10^4\). For smooth surfaces, the flow only transitions from <b>laminar to turbulent</b> when \(Re > 3 \times 10^5\).  A negative Magnus effect occurs in the critical Reynolds region of around \(Re \approx 2 \times 10^5\) whereas, a positive Magnus force is induced when the boundary layer is either turbulent or laminar on both ball sides.
+                    </p>
+                    <p>
+                        When clockwise rotation is imparted on a ball which is launched from left to right, the boundary layer on the upper side of the ball seperates earlier than at the bottom of the ball due to unequal drag forces acting on either end. As a result there is a pressure differential then causes an upward deflection of the wake behind the ball, and thus according to <b>Newton’s Third Law of Motion</b>, there is a downward force, known as the Magnus force, exerted on the ball. This resultant downward force consequently makes the ball fall to the ground at a faster rate than if spin had not been applied to the ball.
+                    </p>
+                    <div id="centered_black">
+                        <iframe src='//gifs.com/embed/the-magnus-effect-3l0XgA' frameborder='0' scrolling='no' width='530px' height='299px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+                    </div>
+                    <br>
+                    <p>
+                        Similarly, if instead the ball had been spun in a counter-clockwise direction,  there would have been a downwards deflection of the wake behind the ball and a subsequent upward Magnus force imparted on the ball. As a result, the spun ball would travel a larger horizontal distance than a nonspinning ball in this scenario. 
+                    </p>
+
+
+                    <footer class="container-fluid text-center">
+                        <p>Physics in Society - Digital Media Project</p>
+                        <p>K. Choudhry,  K. Harris, J. Rhodes, C. Slomski</p>
+                    </footer>
+
+                </div>
+                <div class="col-sm-3 sidenav">
+
+
+                </div>
+            </div>
+
+
+
+            <!-- history Modal -->
+            <div class="modal fade" id="historyModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Golf Ball designs through history</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- moon Modal -->
+            <div id="moonModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Golf on the Moon</h4>
+                        </div>
+                        <div class="modal-body" id="yt-player">
+                            <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bernoulli Modal-->
+            <div id="bernModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">The Bernoulli Principle<h4>
+                                </div>
+                                <div class="modal-body" id="yt-player">
+                                    <p>
+                                        Bernoulli’s Principle states that “for an ideal frictionless flow, along any streamline the total energy is constant.” I.e.
+                                    </p>
+                                    <p>
+                                        \(p + \rho V^2 + \rho gh =\) a constant
+                                    </p>
+                                    <p>
+                                        This has the effect that within a horizontal flow or fluid, points of higher fluid speed will have a lower pressure than points with a slower fluid speed.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- laminar Modal -->
+                    <div class="modal fade" id="laminarModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Laminar Flow</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- turbulent Modal -->
+                    <div class="modal fade" id="turbulentModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Turbulent Flow</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- reynolds Modal -->
+                    <div class="modal fade" id="turbulentModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Reynold's number</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--magnus modal-->
+                    <div id="magnusModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">The Magnus Effect</h4>
+                                </div>
+                                <div class="modal-body" id="yt-player-2">
+                                    <p>Magnus effect description here pls.</p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                </body>
+            </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
