@@ -78,9 +78,6 @@
                         To predict the trajectory of a ball in flight, the initial velocity and position must be known to solve the kinematic equations . The velocity in the vertical and horizontal directions are as follows:
 
                     </p>
-                    <p>
-                        where \(\theta\) is the angle of projection measured upwards from the horizontal, \(v_x\) is the initial horizontal velocity, \(v_y\) is the initial vertical velocity. 
-                    </p>
                     <div class="content_centered row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-3">\(v_y = v sin\theta\)     </div>
@@ -88,10 +85,14 @@
                         <div class="col-sm-3"></div>
                     </div>
                     <p>
+                        where \(\theta\) is the angle of projection measured upwards from the horizontal, \(v_x\) is the initial horizontal velocity, \(v_y\) is the initial vertical velocity. 
+                    </p>
+                   
+                    <p>
                         Below is a graphical representation of a simple ball trajectory under the sole influence of gravity: 
                     </p>
                     <div class="content_centered">
-                        <img src="#" width= 60%>
+                        <img src="Pictures/Jack/Jack2.jpg" width= 60%>
                     </div>
                     <h2>How to account for drag:</h2>
                     <p>
@@ -101,7 +102,7 @@
                         \( \sum^t_0 F = m \frac{\partial^2x}{\partial t^2}  \)
                     </div>
                     <p>
-                        where \(F\) is the force acting on the body, \(m\) is the mass of the ball, \(t\) is the time and \(x\) is the position vector. As described on the sports pages, the drag forces on the ball are greatly impacted by the application of spin, therefore it is essential that we include this information. This is achieved by the inclusion of the drag coefficients, unique to each ball type and dependent on the <b>Reynolds number</b>.
+                        where \(F\) is the force acting on the body, \(m\) is the mass of the ball, \(t\) is the time and \(x\) is the position vector. As described on the sports pages, the drag forces on the ball are greatly impacted by the application of spin, therefore it is essential that we include this information. This is achieved by the inclusion of the drag coefficients, unique to each ball type and dependent on the <b><a data-toggle="modal" href="#reynoldsModal">Reynolds number.</a></b>
                     </p>
                     <p>
                         Thus, in our advanced model we will include the following drag \(F_D\) and lift \(F_L\) forces along with gravity in the equation above to calculate the acceleration and therefore trajectory of the ball, where: 
@@ -114,7 +115,7 @@
                        \( F_D = C_D \frac{1}{2} \rho A V^2  \)
                     </div>
                     <p>
-                        Here \(C_L\) and \(C_D\) are the lift and drag coefficients, \(rho\) is the fluid density, an \(V\) is the velocity of the bulk fluid moving past the object. The area, \(A\), is calculated based on the forward projected area of the ball that is in a perpendicular direction of fluid flow. 
+                        Here \(C_L\) and \(C_D\) are the lift and drag coefficients, \(\rho\) is the fluid density, an \(V\) is the velocity of the bulk fluid moving past the object. The area, \(A\), is calculated based on the forward projected area of the ball that is in a perpendicular direction of fluid flow. 
                     </p>
                     <h2>How to solve the drag equation</h2>
                     <p>
@@ -131,7 +132,7 @@
                         One can integrate the above equations to find the horizontal and vertical displacements of the ball provided the initial velocities and launch angles of the ball are known. From these calculations, it is easy to see the effect that spin and thus drag has on the trajectory of a ball if we compare it to the trajectory of a ball undergoing projectile motion.  Below is a graphical illustration of the difference:
                     </p>
                     <div class="content_centered">
-                        <img src="#" width = 60%>
+                        <img src="Pictures/Jack/Jack4.jpg" width = 60%>
                     </div>
 
 
@@ -227,7 +228,11 @@
                                     <h4 class="modal-title">Laminar Flow</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>Laminar flow is the aerodynamic state whereby layers of air travel around an object without mixing. This state of flow minimises the friction between the air and the surface it is flowing past.</p>
+                                    <p>If you want to find out more, click on the button below to go to out section on laminar and tubulent flow.</p>
+                                    <div class="content_centered">
+                                        <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -248,7 +253,11 @@
                                     <h4 class="modal-title">Turbulent Flow</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>Turbulent flow is the aerodynamic state whereby layers of air are disrupted as they move past an object as they collide with the surface. This can have strange side effects on the drag forces that act on the ball.</p>
+                                    <p>Find out more on our page on laminar and turbulent flow by clicking on the button below.</p>
+                                    <div class="content_centered">
+                                        <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -259,7 +268,7 @@
                     </div>
 
                     <!-- reynolds Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
+                    <div class="modal fade" id="reynoldsModal" role="dialog">
                         <div class="modal-dialog">
 
                             <!-- Modal content-->
@@ -269,7 +278,15 @@
                                     <h4 class="modal-title">Reynold's number</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        The Reynolds number is a constant specific to a certain aerodynamic situation. It gives an indication as to when flow will transition from a laminar to a turbulent state.
+                                    </p>
+                                    <p>
+                                        To find out more on the Reynold’s number, click the button below to visit our physics section, which goes into greater detail.
+                                    </p>
+                                    <div class="content_centered">
+                                        <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -287,9 +304,17 @@
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">The Magnus Effect</h4>
                                 </div>
-                                <div class="modal-body" id="yt-player-2">
-                                    <p>Magnus effect description here pls.</p>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                                <div class="modal-body">
+                                    <p>
+                                        The spinning motion of a ball or cylinder causes air to flow faster around one side of the object than the other. This creates a pressure difference between the two sides which results in a force towards the lower pressure side. The movement caused by this force is known as the <b>Magnus Effect.</b>
+                                    </p>
+                                    <p>
+                                        If you want to find out more, click the button below to go to our section on the Magnus effect.
+                                    </p>
+                                    <div class="content_centered">
+                                        <a href="magnus.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                                    </div>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>

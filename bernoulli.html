@@ -71,7 +71,52 @@
 
                     <!--Content body-->
                     <h1>The Bernoulli Principle</h1>
+                    <hr>
 
+                    <p>
+                        Bernoulli’s theorem is the principle of energy conservation for ideal fluids in laminar, steady flow and has many engineering applications.  In fluid dynamics, Bernouilli’s principle is the statement that:
+                    </p>
+                    <h3 class="content_centered"><i>
+                        "At points along a horizontal streamline, higher pressure regions have lower fluid speed and lower pressure regions have higher fluid speeds.”
+                        </i>
+                    </h3>
+                    <p>
+                        This may sound counterintuitive to you since most people associate high speeds with high pressures, however we will explain below why this statement is indeed correct by applying Newton’s Second Law of motion to fluid within a tube. 
+                    </p>
+                    <div class="row " id="centered_black"> 
+                        <img src="Pictures/Physics/hose.jpg">
+                    </div>
+                    <br>
+                    <p>
+                        Consider a horizontal water pipe which has a varying diameter – the first half of the pipe is wider than the second half of the pipe. Incompressible fluids that pass through the pipe will therefore have to speed up when they reach the narrower constricted section so that a constant volume flow rate is maintained. But where does this additional kinetic energy come from? As demonstrated by the <i>work energy principle</i>, the only way to give a fluid kinetic energy is do work on it, so there must be an external force acting on the fluid.
+                    </p>
+                    <p>
+                        If we assume that the flow through the pipe is continuous and perfectly <b><a data-toggle="modal" href="#laminarModal">laminar</a></b>, we will have no energy loss due to dissipative forces. It must consequently be non-dissipative forces that are doing work on the fluid causing it to speed up. In fact, it is the different surrounding fluid pressures in the narrow and wide sections of the pipe that result in a net force and thus accelerate the portion of fluid. 
+                    </p>
+                    <div class="content_centered">
+                        <img src="Pictures/Physics/bern.png" width =70%>
+                    </div>
+                    <p>
+                        Consider the diagram above. As the fluid enters the narrower region, the force from pressure \(P_1\) pushes on the fluid in the direction of fluid travel and thus does positive work on the shaded section of the fluid. The force from pressure \(P_2\) pushes to the left and does negative work on the same portion of fluid, as it acts in the opposite direction to the motion of the fluid. 
+                    </p>
+                    <p>
+                        In accordance with the <b>continuity equation</b>, the shaded portion of fluid speeds up which means net positive work must be applied to it. Therefore, we can conclude the \(P_1 > P_2\) and qualitatively, that the wider and slower side of the tube has a lower pressure than the narrow and faster side. This inverse relationship between the speed and pressure at a point within a fluid is known as Bernoulli’s principle.
+                    </p>
+                    <p>
+                        Bernouilli’s principle can be summarized concisely in one mathematical equation that also considers changes in gravitational potential energy:
+                    </p>
+                    <div class="content_centered">
+                        \(p + \rho V^2 + \rho gh =\) a constant
+                    </div>
+                    <br>
+
+                    <p>
+                        where \(P\) is the pressure, \(\rho\) is the density of the fluid, \(v\) is the velocity of the fluid, \(h\) is the height of the fluid and \(g\) is the gravitational field constant. This equation is valid at any arbitrary point along a streamline, provided the flow is steady, incompressible, and that there is negligible friction from viscous forces. 
+                    </p>
+                    
+                    
+                    
+                    
 
 
                     <footer class="container-fluid text-center">
@@ -88,18 +133,24 @@
 
 
 
-            <!-- history Modal -->
-            <div class="modal fade" id="historyModal" role="dialog">
+            
+
+            <!-- laminar Modal -->
+            <div class="modal fade" id="laminarModal" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf Ball designs through history</h4>
+                            <h4 class="modal-title">Laminar Flow</h4>
                         </div>
                         <div class="modal-body">
-                            <p>Some text in the modal.</p>
+                            <p>Laminar flow is the aerodynamic state whereby layers of air travel around an object without mixing. This state of flow minimises the friction between the air and the surface it is flowing past.</p>
+                            <p>If you want to find out more, click on the button below to go to out section on laminar and tubulent flow.</p>
+                            <div class="content_centered">
+                                <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -109,114 +160,59 @@
                 </div>
             </div>
 
-            <!-- moon Modal -->
-            <div id="moonModal" class="modal fade" role="dialog">
+            <!-- turbulent Modal -->
+            <div class="modal fade" id="turbulentModal" role="dialog">
                 <div class="modal-dialog">
+
+                    <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf on the Moon</h4>
+                            <h4 class="modal-title">Turbulent Flow</h4>
                         </div>
-                        <div class="modal-body" id="yt-player">
-                            <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        <div class="modal-body">
+                            <p>Turbulent flow is the aerodynamic state whereby layers of air are disrupted as they move past an object as they collide with the surface. This can have strange side effects on the drag forces that act on the ball.</p>
+                            <p>Find out more on our page on laminar and turbulent flow by clicking on the button below.</p>
+                            <div class="content_centered">
+                                <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
+
                 </div>
             </div>
 
-            <!-- bernoulli Modal-->
-            <div id="bernModal" class="modal fade" role="dialog">
+            <!-- reynolds Modal -->
+            <div class="modal fade" id="reynoldsModal" role="dialog">
                 <div class="modal-dialog">
+
+                    <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">The Bernoulli Principle<h4>
-                                </div>
-                                <div class="modal-body" id="yt-player">
-                                    <p>
-                                        Bernoulli’s Principle states that “for an ideal frictionless flow, along any streamline the total energy is constant.” I.e.
-                                    </p>
-                                    <p>
-                                        \(p + \rho V^2 + \rho gh =\) a constant
-                                    </p>
-                                    <p>
-                                        This has the effect that within a horizontal flow or fluid, points of higher fluid speed will have a lower pressure than points with a slower fluid speed.
-                                    </p>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                                </div>
-                                </div>
+                            <h4 class="modal-title">Reynold's number</h4>
                         </div>
-                    </div>
-
-                    <!-- laminar Modal -->
-                    <div class="modal fade" id="laminarModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Laminar Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
+                        <div class="modal-body">
+                            <p>
+                                The Reynolds number is a constant specific to a certain aerodynamic situation. It gives an indication as to when flow will transition from a laminar to a turbulent state.
+                            </p>
+                            <p>
+                                To find out more on the Reynold’s number, click the button below to visit our physics section, which goes into greater detail.
+                            </p>
+                            <div class="content_centered">
+                                <a href="lamturb.html"><button class="btn btn-default">Go to the physics section <span class="glyphicon glyphicon-arrow-right"></span></button></a>
                             </div>
-
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
-                    <!-- turbulent Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Turbulent Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- reynolds Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Reynold's number</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                </div>
+            </div>
 
                     <!--magnus modal-->
                     <div id="magnusModal" class="modal fade" role="dialog">
