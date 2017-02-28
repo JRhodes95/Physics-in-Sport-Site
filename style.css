@@ -25,6 +25,10 @@ footer {
     font-size: 400%;
 }
 
+.white_text{
+    color:white
+}
+
 body{
     background-color: forestgreen;
     background-image: url(Pictures/back4.png);

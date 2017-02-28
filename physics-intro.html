@@ -24,7 +24,79 @@
 
         <!--Import js file to allow links to bootstrap tabs-->
         <script src="tablinks.js"></script>
+        
+        <style>
+            .centered{
+                text-align: center;
+            }
 
+            .foot{
+                background-color: #f8f8f8;
+                color:black;
+                border-top-color: green;
+
+            }
+
+            .welcome{
+
+                padding: 0px;
+                margin: 0px;
+
+            }
+
+            .header1 {
+
+                font-size: 300%;
+                background-color: #f8f8f8;
+
+
+            }
+
+
+            .caro1{
+                max-width: 100%;
+
+            }
+            .caro2{
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            #noBorder{
+                padding: 0px;
+                margin: 0px;
+
+            }
+
+
+            .caroHeader{
+                font-size:300%;
+            }
+            @media screen and (max-width: 740px) {
+                .caroHeader{
+                    font-size: 200%;
+                }
+            }
+
+            .body-content{
+                background-color: #f8f8f8;
+                color:black;
+                border-top-color: green;
+
+            }
+            
+            .intro-ani{
+                
+                animation: mymove 3s;
+                animation-fill-mode: forwards;                
+            }
+            
+            @keyframes mymove {
+                from {top: 0px;}
+                to {top: 100px;}
+            }
+
+        </style>
     </head>
     <body>
         <!--Navbar-->
@@ -64,190 +136,106 @@
 
         <!--Page body-->
         <div class="container-fluid">    
-            <div class="row content" id="head_div">
-                <div class="col-sm-1 sidenav"></div>
-                <div class="col-sm-8 white_back" id="content_justified">
+            <div class="row"><br></div>
+            <div class="row white_text" id="centered_black">
+                <div class="col-sm-2 sidenav"></div>
+                <div class="col-sm-4" id="content_centered">
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1" data-slide-to="1"></li>
+                            <li data-target="#carousel1" data-slide-to="2"></li>
+                            <li data-target="#carousel1" data-slide-to="3"></li>
+                        </ol>
 
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <a href="football.html">
+                                    <img src="Pictures/Physics/newton.png" alt="Projeciles" height=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">Newtonian Mechanics</h3>
+                                        <p>Learn more on the mathematics behind projectile motion...</p>
+                                    </div>
+                                </a>
+                            </div>
 
+                            <div class="item">
+                                <a href="cricket.html">
+                                    <img src="Pictures/Physics/reynolds.png" alt="Air flow" height=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">Airflow and the Reynolds Number</h3>
+                                        <p>What causes turbulence, and what is the significance of the Reynolds number?</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="tennis.html">
+                                    <img src="Pictures/Physics/bernoulli.png" alt="Bernoulli" height=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">The Bernoulli Principle</h3>
+                                        <p>How does airspeed affect pressure?</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="golf.html">
+                                    <img src="Pictures/Physics/magnus.png" alt="Magnus" height=100%>
+                                    <div class="carousel-caption">
+                                        <h3 class="caroHeader">The Magnus Effect</h3>
+                                        <p>It lifts golf balls, and curls footballs, but what causes it?</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 intro-ani">
                     <!--Content body-->
                     <h1>Introduction</h1>
+                    <hr>
                     <p>
                         If you want to know more about the physics and maths behind the information presented in the rest of the site, you’ve come to the right place. Here we give a more detailed description of projectile motion, laminar and turbulent flow, the Bernoulli Principle and the Magnus effect.
                     </p>
                     <p>
                         You may have encountered these terms in our various sports pages. In this section, we will delve deeper into the physical theories and mathematics underlying the sporting phenomena described in the rest of the site. 
-
                     </p>
 
-
-                    <footer class="container-fluid text-center">
-                        <p>Physics in Society - Digital Media Project</p>
-                        <p>K. Choudhry,  K. Harris, J. Rhodes, C. Slomski</p>
-                    </footer>
-
                 </div>
-                <div class="col-sm-3 sidenav">
-
-
-                </div>
+                <div class="col-sm-2 sidenav"></div>
             </div>
-
-
-
-            <!-- history Modal -->
-            <div class="modal fade" id="historyModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf Ball designs through history</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="row"><br></div>
+           
+            <div class="row foot" id="content_centered">
+                <hr>
+                <p>Physics in Society - Digital Media Project 2017</p>
+                <p>K. Choudhry, K. Harris, J. Rhodes, C. Slomski</p>
             </div>
-
-            <!-- moon Modal -->
-            <div id="moonModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Golf on the Moon</h4>
-                        </div>
-                        <div class="modal-body" id="yt-player">
-                            <p>On the 6th Feb 1971, Alan Shepard became the first man to hit a golf ball on the moon. Supposedly, he had smuggled the ball on board inside his spacesuit.</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZLl3XwlAIE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- bernoulli Modal-->
-            <div id="bernModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">The Bernoulli Principle<h4>
-                                </div>
-                                <div class="modal-body" id="yt-player">
-                                    <p>
-                                        Bernoulli’s Principle states that “for an ideal frictionless flow, along any streamline the total energy is constant.” I.e.
-                                    </p>
-                                    <p>
-                                        \(p + \rho V^2 + \rho gh =\) a constant
-                                    </p>
-                                    <p>
-                                        This has the effect that within a horizontal flow or fluid, points of higher fluid speed will have a lower pressure than points with a slower fluid speed.
-                                    </p>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                                </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <!-- laminar Modal -->
-                    <div class="modal fade" id="laminarModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Laminar Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- turbulent Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Turbulent Flow</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- reynolds Modal -->
-                    <div class="modal fade" id="turbulentModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Reynold's number</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!--magnus modal-->
-                    <div id="magnusModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">The Magnus Effect</h4>
-                                </div>
-                                <div class="modal-body" id="yt-player-2">
-                                    <p>Magnus effect description here pls.</p>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Return to the page.</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        </div>
+            
 
 
-                </div>
 
-                </body>
-            </html>
+           
+
+
+
+    </body>
+</html>
 
 
 
